@@ -3,7 +3,6 @@ import org.apache.commons.math3.distribution.TDistribution;
 import org.apache.commons.math3.stat.StatUtils;
 import org.apache.commons.math3.stat.correlation.Covariance;
 
-import java.util.ArrayList;
 import java.util.LinkedHashMap;
 
 public class Calculation {
