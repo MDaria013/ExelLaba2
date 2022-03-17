@@ -7,8 +7,8 @@ import java.io.IOException;
 
 public class MyGUI extends JFrame {
     private JPanel panel1;
-    private JTextField importField;
-    private JTextField exportField;
+    private JTextField textField1;
+    private JTextField textField2;
     private JButton Button1;
     private JButton Button2;
     private JButton Button3;
@@ -25,7 +25,7 @@ public class MyGUI extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 try {
-                    calc.calculation(r.Reading(importField.getText()));
+                    calc.calculation(r.Reading(textField1.getText()));
                     JOptionPane.showMessageDialog(null, "Файл загружен", "Чтение", JOptionPane.PLAIN_MESSAGE);
                 } catch (Exception ex) {
                     JOptionPane.showMessageDialog(null, "Файл не найден", "Ошибка", JOptionPane.PLAIN_MESSAGE);
@@ -37,7 +37,7 @@ public class MyGUI extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 try {
-                    wr.Writing(calc, exportField.getText());
+                    wr.Writing(calc, textField2.getText());
                     JOptionPane.showMessageDialog(null, "Файл сохранен", "Запись", JOptionPane.PLAIN_MESSAGE);
                 } catch (Exception ex) {
                     JOptionPane.showMessageDialog(null, "Ошибка в пути файла", "Ошибка", JOptionPane.PLAIN_MESSAGE);

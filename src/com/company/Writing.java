@@ -19,7 +19,7 @@ public class Writing {
         sheet.setColumnWidth(0, 6200);
 
         for (int i=1; i <= 3; i++ ){
-        sheet.setColumnWidth(i, 4000);}
+            sheet.setColumnWidth(i, 4000);}
 
         XSSFRow row0 = sheet.createRow(0);
         row0.createCell(1, CellType.STRING).setCellValue("x");
@@ -42,4 +42,3 @@ public class Writing {
         book2.close();
 
     }}
-
